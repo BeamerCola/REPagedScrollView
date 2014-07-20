@@ -90,9 +90,7 @@
       [v removeFromSuperview];
     }
     _pageViews = [NSMutableArray new];
-    self.numberOfPages = 0;
     self.pageControl.numberOfPages = 0;
-    self.pages = @[];
 }
 
 #pragma mark -
