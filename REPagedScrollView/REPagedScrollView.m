@@ -84,6 +84,17 @@
     return _pageViews.count;
 }
 
+- (void)clear
+{
+    for (UIView *v in self.scrollView.subviews) {
+      [v removeFromSuperview];
+    }
+    _pageViews = [NSMutableArray new];
+    self.numberOfPages = 0;
+    self.pageControl.numberOfPages = 0;
+    self.pages = @[];
+}
+
 #pragma mark -
 #pragma mark Events
 

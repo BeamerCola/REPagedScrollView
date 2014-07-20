@@ -35,5 +35,6 @@
 
 - (void)addPage:(UIView *)pageView;
 - (void)scrollToPageWithIndex:(NSUInteger)pageIndex animated:(BOOL)animated;
+- (void)clear;
 
 @end
